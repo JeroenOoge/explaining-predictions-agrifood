@@ -1,0 +1,130 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  color: #37474f;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  height: 100%;
+  line-height: 1.5;
+}
+
+body {
+  background-color: #eceff1 !important;
+  height: 100%;
+  margin: 0;
+  padding: 10vh 10vw;
+}
+
+#react-target {
+  width: 100%;
+  height: 100%;
+}
+
+.dashboard {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  row-gap: 5vh;
+}
+
+/* Dashboard header */
+.dashboard-header {
+  display: flex;
+  align-items: center;
+}
+.dashboard-header .ant-select-auto-complete {
+  flex-basis: 35%;
+  margin: 0 1rem;
+}
+.dashboard-header h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+}
+.countries-container {
+  margin-left: 1rem;
+  flex-grow: 1;
+}
+
+/* Countries in selection list */
+.option-all {
+  font-style: italic;
+}
+.optionLabel {
+  display: inline-block;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+/* Fan chart */
+.fan-chart,
+.fan-chart-dummy {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  overflow: hidden;
+}
+.line {
+  fill: none;
+  stroke-width: 2;
+}
+.line.prediction,
+.line.fit {
+  stroke-dasharray: 2 2;
+}
+
+.axis-left line {
+  stroke-dasharray: 1 3;
+}
+.tick line,
+.axis-bottom .domain {
+  stroke: #d5d8dc;
+}
+.tick text {
+  fill: #808b96;
+}
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  background-color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  max-width: 15rem;
+}
+.tooltip .bold {
+  font-weight: bold;
+}
+.tooltip .label {
+  color: #808b96;
+  font-style: italic;
+  margin-left: 0.5rem;
+}
+
+.time-indicator {
+  stroke: #d5d8dc;
+  stroke-width: 1;
+}
+
+/* Fan chart */
+.fan:hover {
+  opacity: 0.7!important;
+}
+
+/* Switch for fans*/
+.switch-fans {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  font-family: 0.875rem;
+}
+.switch-fans .ant-switch {
+  margin-right: 0.5rem;
+}
