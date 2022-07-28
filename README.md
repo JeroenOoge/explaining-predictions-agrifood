@@ -2,6 +2,7 @@
 
 This repository contains additional materials for the paper [*Visually Explaining Uncertain Price Predictions in Agrifood: A User-Centred Case-Study*](https://doi.org/10.3390/agriculture12071024) (Agriculture, [Special Issue *Application of Decision Support Systems in Agriculture*](https://www.mdpi.com/journal/agriculture/special_issues/Decision_Support_Systems_Application)) by Jeroen Ooge and Katrien Verbert. Here is a brief overview of the folders in this repository.
 
+ - **Demo**. Demo video of our visual decision-support system.
  - **Images**. All the paper's images.
  - **R scripts**. Code for applying linear regression to a csv dataset with columns *product*, *country*, *price*, and *millisSinceEpoch* (the demo uses `data_original.csv`). This creates 2 json files:
    - `Visual DSS/private/dataset_predicted.json`: result of extending the original dataset with fit values and boundaries of uncertainty intervals.
