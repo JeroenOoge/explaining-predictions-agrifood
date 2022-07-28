@@ -32,3 +32,5 @@ meteor
 mongoimport --db meteor --collection products --file .\private\products.json --host localhost:3001
 mongoimport --db meteor --collection data --file .\private\dataset_predicted.json --host localhost:3001
 ```
+
+https://user-images.githubusercontent.com/33607235/181482846-f62e62dc-001d-4f03-a812-94b611662a13.mp4
